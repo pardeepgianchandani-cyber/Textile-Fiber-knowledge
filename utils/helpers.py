@@ -1,7 +1,3 @@
-
-## **File 5: utils/helpers.py** (Helper Functions)
-
-```python
 """
 Helper functions for the Textile Fiber Explorer application.
 """
@@ -14,17 +10,17 @@ import pathlib
 def load_fibers_data() -> List[Dict[str, Any]]:
     """
     Load fiber data from JSON file.
-    
+
     Returns:
         List of fiber dictionaries
     """
     try:
         # Get the path to the data directory
         data_path = pathlib.Path(__file__).parent.parent / "data" / "fibers.json"
-        
+
         with open(data_path, 'r') as file:
             fibers = json.load(file)
-        
+
         return fibers
     except FileNotFoundError:
         print(f"Warning: Could not find {data_path}")
@@ -36,7 +32,7 @@ def load_fibers_data() -> List[Dict[str, Any]]:
 def get_sample_fibers() -> List[Dict[str, Any]]:
     """
     Return sample fiber data if the JSON file is not found.
-    
+
     Returns:
         List of sample fiber dictionaries
     """
@@ -251,11 +247,11 @@ def get_sample_fibers() -> List[Dict[str, Any]]:
 def filter_fibers_by_type(fibers: List[Dict[str, Any]], fiber_type: str) -> List[Dict[str, Any]]:
     """
     Filter fibers by type.
-    
+
     Args:
         fibers: List of fiber dictionaries
         fiber_type: Type to filter by (e.g., "Natural", "Synthetic")
-    
+
     Returns:
         Filtered list of fibers
     """
@@ -264,10 +260,10 @@ def filter_fibers_by_type(fibers: List[Dict[str, Any]], fiber_type: str) -> List
 def get_fiber_names(fibers: List[Dict[str, Any]]) -> List[str]:
     """
     Get list of all fiber names.
-    
+
     Args:
         fibers: List of fiber dictionaries
-    
+
     Returns:
         List of fiber names
     """
@@ -276,11 +272,11 @@ def get_fiber_names(fibers: List[Dict[str, Any]]) -> List[str]:
 def calculate_property_average(fibers: List[Dict[str, Any]], property_name: str) -> float:
     """
     Calculate average value for a specific property across fibers.
-    
+
     Args:
         fibers: List of fiber dictionaries
         property_name: Name of property to average
-    
+
     Returns:
         Average value (converted to numeric scale)
     """
@@ -292,26 +288,26 @@ def calculate_property_average(fibers: List[Dict[str, Any]], property_name: str)
         "High": 4,
         "Very High": 5
     }
-    
+
     values = []
     for fiber in fibers:
         prop_value = fiber["properties"].get(property_name, "Medium")
         values.append(property_scale.get(prop_value, 3))
-    
+
     return sum(values) / len(values) if values else 0
 
 def create_comparison_table(fibers: List[Dict[str, Any]]) -> pd.DataFrame:
     """
     Create a comparison table for selected fibers.
-    
+
     Args:
         fibers: List of fiber dictionaries to compare
-    
+
     Returns:
         DataFrame with comparison data
     """
     comparison_data = []
-    
+
     for fiber in fibers:
         comparison_data.append({
             "Fiber": fiber["name"],
@@ -321,16 +317,16 @@ def create_comparison_table(fibers: List[Dict[str, Any]]) -> pd.DataFrame:
             "Moisture Absorption": fiber["properties"].get("moisture_absorption", "N/A"),
             "Top Producer": fiber["production_countries"][0] if fiber["production_countries"] else "N/A"
         })
-    
+
     return pd.DataFrame(comparison_data)
 
 def get_fiber_statistics(fibers: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
     Get overall statistics about the fiber database.
-    
+
     Args:
         fibers: List of fiber dictionaries
-    
+
     Returns:
         Dictionary with statistics
     """
@@ -342,17 +338,17 @@ def get_fiber_statistics(fibers: List[Dict[str, Any]]) -> Dict[str, Any]:
         "total_applications": 0,
         "unique_countries": set()
     }
-    
+
     # Calculate sustainability scores
     sustainability_scores = {"Low": 1, "Medium": 2, "High": 3}
     scores = []
-    
+
     for fiber in fibers:
         scores.append(sustainability_scores.get(fiber["sustainability"], 0))
         stats["total_applications"] += len(fiber["applications"])
         stats["unique_countries"].update(fiber["production_countries"])
-    
+
     stats["avg_sustainability_score"] = sum(scores) / len(scores) if scores else 0
     stats["unique_countries"] = len(stats["unique_countries"])
-    
+
     return stats
