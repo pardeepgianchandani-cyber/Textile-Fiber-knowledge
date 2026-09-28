@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Cotton",
+    "type": "Natural",
+    "sustainability": "Medium",
+    "properties": {
+      "tensile_strength": "Medium",
+      "moisture_absorption": "High",
+      "elasticity": "Low",
+      "thermal_conductivity": "Medium",
+      "resistance_to_chemicals": "Low",
+      "biodegradability": "High"
+    },
+    "advantages": [
+      "Comfortable and soft to wear",
+      "Excellent breathability",
+      "Hypoallergenic",
+      "Good moisture absorption",
+      "Easy to dye and print",
+      "Biodegradable",
+      "Renewable resource"
+    ],
+    "limitations": [
+      "Wrinkles easily",
+      "Shrinks when washed",
+      "Weakens when wet",
+      "Susceptible to mildew",
+      "Can be damaged by acids",
+      "Requires pesticides to grow"
+    ],
+    "applications": [
+      "T-shirts",
+      "Jeans",
+      "Bed sheets",
+      "Towels",
+      "Underwear",
+      "Dresses",
+      "Shirts",
+      "Curtains",
+      "Medical dressings",
+      "Canvas"
+    ],
+    "production_countries": ["China", "India", "USA"],
+    "production_shares": [25.0, 22.0, 15.0],
+    "production_trend": 1.2,
+    "did_you_know": "Cotton has been cultivated for over 7,000 years and was independently domesticated in both the Old and New Worlds."
+  },
+  {
+    "name": "Polyester",
+    "type": "Synthetic",
+    "sustainability": "Low",
+    "properties": {
+      "tensile_strength": "High",
+      "moisture_absorption": "Very Low",
+      "elasticity": "Medium",
+      "thermal_conductivity": "Low",
+      "resistance_to_chemicals": "High",
+      "biodegradability": "Very Low"
+    },
+    "advantages": [
+      "Strong and durable",
+      "Wrinkle-resistant",
+      "Quick-drying",
+      "Resistant to chemicals and mildew",
+      "Retains shape well",
+      "Lightweight",
+      "Affordable"
+    ],
+    "limitations": [
+      "Poor breathability",
+      "Can feel clammy",
+      "Static electricity buildup",
+      "Non-biodegradable",
+      "Made from petroleum",
+      "Environmental concerns"
+    ],
+    "applications": [
+      "Sportswear",
+      "Outerwear",
+      "Bedding",
+      "Carpets",
+      "Ropes",
+      "Conveyor belts",
+      "Sailcloth",
+      "Medical implants",
+      "Bottles",
+      "Packaging"
+    ],
+    "production_countries": ["China", "India", "USA"],
+    "production_shares": [35.0, 18.0, 12.0],
+    "production_trend": 1.5,
+    "did_you_know": "Polyester was first patented in 1941 and became popular in the 1970s as a 'wonder fabric'."
+  },
+  {
+    "name": "Wool",
+    "type": "Natural",
+    "sustainability": "High",
+    "properties": {
+      "tensile_strength": "Medium",
+      "moisture_absorption": "High",
+      "elasticity": "High",
+      "thermal_conductivity": "Low",
+      "resistance_to_chemicals": "Low",
+      "biodegradability": "High"
+    },
+    "advantages": [
+      "Excellent insulation",
+      "Naturally flame-resistant",
+      "Absorbs moisture without feeling wet",
+      "Elastic and resilient",
+      "Biodegradable",
+      "Renewable resource",
+      "Odor-resistant"
+    ],
+    "limitations": [
+      "Can shrink when washed",
+      "Can be itchy",
+      "Requires special care",
+      "Can be damaged by moths",
+      "Expensive",
+      "Seasonal production"
+    ],
+    "applications": [
+      "Sweaters",
+      "Suits",
+      "Blankets",
+      "Carpets",
+      "Winter coats",
+      "Socks",
+      "Upholstery",
+      "Insulation",
+      "Felt",
+      "Musical instrument pads"
+    ],
+    "production_countries": ["Australia", "China", "New Zealand"],
+    "production_shares": [30.0, 18.0, 12.0],
+    "production_trend": 0.8,
+    "did_you_know": "Wool can absorb up to 30% of its weight in moisture without feeling wet, making it ideal for outdoor clothing."
+  },
+  {
+    "name": "Silk",
+    "type": "Natural",
+    "sustainability": "Medium",
+    "properties": {
+      "tensile_strength": "High",
+      "moisture_absorption": "Medium",
+      "elasticity": "Medium",
+      "thermal_conductivity": "Medium",
+      "resistance_to_chemicals": "Low",
+      "biodegradability": "High"
+    },
+    "advantages": [
+      "Luxurious feel and appearance",
+      "Strongest natural fiber",
+      "Excellent drape",
+      "Hypoallergenic",
+      "Thermoregulating",
+      "Lightweight",
+      "Natural sheen"
+    ],
+    "limitations": [
+      "Very expensive",
+      "Requires dry cleaning",
+      "Can be damaged by sunlight",
+      "Weakens when wet",
+      "Labor-intensive production",
+      "Sensitive to perspiration"
+    ],
+    "applications": [
+      "Evening gowns",
+      "Ties",
+      "Scarves",
+      "Bedding",
+      "Medical sutures",
+      "Parachutes",
+      "Insulation",
+      "Art supplies",
+      "Wig making",
+      "Musical instrument strings"
+    ],
+    "production_countries": ["China", "India", "Uzbekistan"],
+    "production_shares": [80.0, 15.0, 2.0],
+    "production_trend": 0.9,
+    "did_you_know": "It takes about 2,500 silkworms to produce one pound of raw silk, and a single silk filament can be up to 1,600 meters long."
+  },
+  {
+    "name": "Nylon",
+    "type": "Synthetic",
+    "sustainability": "Low",
+    "properties": {
+      "tensile_strength": "Very High",
+      "moisture_absorption": "Low",
+      "elasticity": "High",
+      "thermal_conductivity": "Medium",
+      "resistance_to_chemicals": "High",
+      "biodegradability": "Very Low"
+    },
+    "advantages": [
+      "Extremely strong and durable",
+      "Excellent elasticity",
+      "Resistant to abrasion",
+      "Quick-drying",
+      "Easy to care for",
+      "Lightweight",
+      "Affordable"
+    ],
+    "limitations": [
+      "Poor UV resistance",
+      "Can melt at high temperatures",
+      "Non-biodegradable",
+      "Can develop static",
+      "Made from petroleum",
+      "Environmental concerns"
+    ],
+    "applications": [
+      "Stockings",
+      "Swimwear",
+      "Sportswear",
+      "Ropes",
+      "Parachutes",
+      "Toothbrush bristles",
+      "Fishing line",
+      "Carpets",
+      "Gears",
+      "Musical instrument parts"
+    ],
+    "production_countries": ["China", "USA", "India"],
+    "production_shares": [45.0, 20.0, 10.0],
+    "production_trend": 1.1,
+    "did_you_know": "Nylon was first introduced at the 1939 World's Fair and was initially called 'fiber 66' because of its molecular structure."
+  },
+  {
+    "name": "Linen",
+    "type": "Natural",
+    "sustainability": "High",
+    "properties": {
+      "tensile_strength": "High",
+      "moisture_absorption": "High",
+      "elasticity": "Low",
+      "thermal_conductivity": "High",
+      "resistance_to_chemicals": "Medium",
+      "biodegradability": "High"
+    },
+    "advantages": [
+      "Cool and fresh feeling",
+      "Highly absorbent",
+      "Stronger when wet",
+      "Antibacterial",
+      "Biodegradable",
+      "Environmentally friendly",
+      "UV resistant"
+    ],
+    "limitations": [
+      "Wrinkles easily",
+      "Stiff when new",
+      "Expensive",
+      "Can shrink",
+      "Labor-intensive production"
+    ],
+    "applications": [
+      "Summer clothing",
+      "Bedding",
+      "Tablecloths",
+      "Napkins",
+      "Towel",
+      "Canvas",
+      "Sackcloth",
+      "Banknote paper",
+      "Insulation"
+    ],
+    "production_countries": ["France", "Belgium", "Netherlands"],
+    "production_shares": [60.0, 20.0, 10.0],
+    "production_trend": 0.7,
+    "did_you_know": "Linen is one of the oldest textiles, with evidence of its use dating back over 30,000 years."
+  },
+  {
+    "name": "Spandex",
+    "type": "Synthetic",
+    "sustainability": "Low",
+    "properties": {
+      "tensile_strength": "Medium",
+      "moisture_absorption": "Low",
+      "elasticity": "Very High",
+      "thermal_conductivity": "Low",
+      "resistance_to_chemicals": "High",
+      "biodegradability": "Very Low"
+    },
+    "advantages": [
+      "Exceptional elasticity (up to 600% stretch)",
+      "Lightweight",
+      "Stronger than rubber",
+      "Resistant to body oils and perspiration",
+      "Retains shape",
+      "Comfortable fit"
+    ],
+    "limitations": [
+      "Poor breathability",
+      "Can be damaged by heat",
+      "Non-biodegradable",
+      "Made from petroleum",
+      "Can lose elasticity over time"
+    ],
+    "applications": [
+      "Sportswear",
+      "Swimwear",
+      "Underwear",
+      "Leggings",
+      "Compression garments",
+      "Dancewear",
+      "Medical braces",
+      "Socks"
+    ],
+    "production_countries": ["USA", "China", "Japan"],
+    "production_shares": [40.0, 30.0, 15.0],
+    "production_trend": 1.3,
+    "did_you_know": "Spandex can stretch up to 600% of its original length and still return to its original shape."
+  },
+  {
+    "name": "Acrylic",
+    "type": "Synthetic",
+    "sustainability": "Low",
+    "properties": {
+      "tensile_strength": "Medium",
+      "moisture_absorption": "Low",
+      "elasticity": "Medium",
+      "thermal_conductivity": "Low",
+      "resistance_to_chemicals": "High",
+      "biodegradability": "Very Low"
+    },
+    "advantages": [
+      "Wool-like feel",
+      "Lightweight",
+      "Warm",
+      "Resistant to moths and chemicals",
+      "Colorfast",
+      "Easy to care for",
+      "Affordable"
+    ],
+    "limitations": [
+      "Can pill easily",
+      "Poor breathability",
+      "Can be scratchy",
+      "Flammable",
+      "Non-biodegradable",
+      "Made from petroleum"
+    ],
+    "applications": [
+      "Sweaters",
+      "Blankets",
+      "Outdoor apparel",
+      "Carpets",
+      "Upholstery",
+      "Wigs",
+      "Knitwear",
+      "Athletic wear"
+    ],
+    "production_countries": ["China", "India", "USA"],
+    "production_shares": [50.0, 20.0, 15.0],
+    "production_trend": 1.0,
+    "did_you_know": "Acrylic fiber was originally developed as an artificial wool substitute during World War II."
+  }
+]
